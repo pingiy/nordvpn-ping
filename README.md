@@ -1,17 +1,17 @@
-# Mullvad Ping
+# Nordvpn Ping
 
 Gets the list of Mullvad servers with the best latency according to `ping`.
 
 Run
 
 ```bash
-deno run --allow-net --allow-run https://raw.githubusercontent.com/grant0417/mullvad-ping/main/script.ts
+deno run --allow-net --allow-run https://raw.githubusercontent.com/pingiy/nordvpn-ping/main/script.ts
 ```
 
 Build Exe
 
 ```
-deno compile --allow-net --allow-run -o mullvad-ping https://raw.githubusercontent.com/grant0417/mullvad-ping/main/script.ts
+deno compile --allow-net --allow-run -o nordvpn-ping https://raw.githubusercontent.com/pingiy/nordvpn-ping/main/script.ts
 ```
 
 Note: The Windows version of `ping` is somewhat more limited than that of Linux
