@@ -79,7 +79,7 @@ if (!runTypes.includes(runMode)) {
 
 console.log("Fetching currently available relays...");
 const response = await fetch(
-  `https://api.mullvad.net/www/relays/${serverType}/`,
+  `https://api.nordvpn.com/www/relays/${serverType}/`,
 );
 const json: Array<ServerDataJSON> = await response.json();
 
@@ -126,7 +126,7 @@ if (args["list-countries"]) {
         const regex = /Average = (\d*)ms/;
         const avg = output.match(regex);
         if (avg) {
-          console.log(`Pinged ${server.hostname}.mullvad.net, avg ${avg[1]}ms`);
+          console.log(`Pinged ${server.hostname}.nordvpn.com, avg ${avg[1]}ms`);
 
           results.push({
             hostname: server.hostname,
@@ -148,7 +148,7 @@ if (args["list-countries"]) {
         const values = output.match(regex);
         if (values) {
           console.log(
-            `Pinged ${server.hostname}.mullvad.net, min/avg/max/mdev ${
+            `Pinged ${server.hostname}.nordvpn.com, min/avg/max/mdev ${
               values[0]
             }`,
           );
@@ -180,7 +180,7 @@ if (args["list-countries"]) {
 
     for (const e of top) {
       console.log(
-        ` - ${e.hostname}.mullvad.net (${
+        ` - ${e.hostname}.nordvpn.com (${
           e.avg.toFixed(1)
         }ms) ${e.network_port_speed} Gigabit ${e.type} ${e.city}, ${e.country}`,
       );
