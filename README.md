@@ -1,6 +1,6 @@
 # Nordvpn Ping
 
-Gets the list of Mullvad servers with the best latency according to `ping`.
+Gets the list of MNordvpn servers with the best latency according to `ping`.
 
 Run
 
